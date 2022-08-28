@@ -15,14 +15,14 @@ int main()
 	regex regf(vir1);
 	regex_search(str, output, regf);
 	cout << output[0] << endl;
-	if (str == output[0]) cout << "yes";
-	else cout << "no";
+	if (str == output[0]) cout << "Matematicheskoe virazenie corectno";
+	else cout << "Matematicheskoe virazenie ne corectno";
 }
 
 /*
-char fam[] = "[^À-ß][à-ÿ]{3,20}";
-char hom[] = "[ä]\\.\\s?\\d+";
-char kv[] = "[ê][â]\\.\\s?\\d+";
+char fam[] = "[^Ã€-ÃŸ][Ã -Ã¿]{3,20}";
+char hom[] = "[Ã¤]\\.\\s?\\d+";
+char kv[] = "[Ãª][Ã¢]\\.\\s?\\d+";
 regex regf(fam);
 regex_search(str, output, regf);
 cout << output[0] << " ";
